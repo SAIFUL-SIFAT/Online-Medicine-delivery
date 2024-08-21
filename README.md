@@ -23,14 +23,6 @@ First, clone the repository to your local machine:
 git clone https://github.com/username/OnlineMedicineDelivery.git
 cd OnlineMedicineDelivery
 
-Build the Project
-Compile the project using g++:
-
-bash
-Copy code
-g++ -o OnlineMedicineDelivery main.cpp
-Replace main.cpp with the appropriate source files if your project structure is different.Build the Project
-Compile the project using g++:
 
 bash
 Copy code
