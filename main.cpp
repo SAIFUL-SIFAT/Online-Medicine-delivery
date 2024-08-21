@@ -21,11 +21,51 @@ void slipPrint(int voucher, char location, int item[][2], int selection, const c
     cout << "---------------------------------------------------------------------------\n";
     int i = 0, total = 0;
     while (i < selection) {
-        if (item[i][0] == 1) {
-            cout << "Paracetamol                              " << item[i][1] << "                      " << item[i][1] * 10 << "\n";
-            total += item[i][1] * 10;
+        switch (item[i][0]) {
+            case 1:
+                cout << "Paracetamol                              " << item[i][1] << "                      " << item[i][1] * 10 << "\n";
+                total += item[i][1] * 10;
+                break;
+            case 2:
+                cout << "Ibuprofen                                " << item[i][1] << "                      " << item[i][1] * 12 << "\n";
+                total += item[i][1] * 12;
+                break;
+            case 3:
+                cout << "Amoxicillin                              " << item[i][1] << "                      " << item[i][1] * 15 << "\n";
+                total += item[i][1] * 15;
+                break;
+            case 4:
+                cout << "Cough Syrup                              " << item[i][1] << "                      " << item[i][1] * 20 << "\n";
+                total += item[i][1] * 20;
+                break;
+            case 5:
+                cout << "Vitamin C                                " << item[i][1] << "                      " << item[i][1] * 25 << "\n";
+                total += item[i][1] * 25;
+                break;
+            case 6:
+                cout << "Allergy Tablets                          " << item[i][1] << "                      " << item[i][1] * 18 << "\n";
+                total += item[i][1] * 18;
+                break;
+            case 7:
+                cout << "Pain Relief Cream                        " << item[i][1] << "                      " << item[i][1] * 22 << "\n";
+                total += item[i][1] * 22;
+                break;
+            case 8:
+                cout << "Antiseptic Lotion                        " << item[i][1] << "                      " << item[i][1] * 14 << "\n";
+                total += item[i][1] * 14;
+                break;
+            case 9:
+                cout << "Antacid                                  " << item[i][1] << "                      " << item[i][1] * 8 << "\n";
+                total += item[i][1] * 8;
+                break;
+            case 10:
+                cout << "Cold Medicine                            " << item[i][1] << "                      " << item[i][1] * 30 << "\n";
+                total += item[i][1] * 30;
+                break;
+            default:
+                cout << "Unknown Medicine                         " << item[i][1] << "                      " << item[i][1] * 0 << "\n";
+                break;
         }
-        // Add other medicines similarly
         i++;
     }
     
